@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:"Varela Round", sans-serif;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+
+}
+:root {
+    
+    --text:black;
+    --display:rgb(238, 238, 238);
+    --input:rgb(198, 197, 197);
+    --hover:rgb(110, 108, 108);
+}
+.dark-theme{
+    
+    --text:white;
+    --display:rgb(39, 48, 81);
+    --input:black;
+    --hover:rgb(53, 52, 52);
+}
+html{
+    overflow: hidden;
+    background-color: rgb(53, 51, 54);
+}
+
+.container{
+    width: 100%;
+    height: 100hv;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blanchedalmond; */
+}
+.calculator{
+    position: relative;
+    margin-top: 70px;
+    max-width: 300px;
+    height: 550px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: var(--display);
+}
+.heading{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    /* padding-top: 10px; */
+}
+p{
+    font-size: 28px;
+    color: var(--text);
+}
+.thm-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thm-btn i{
+    font-size: 15px;
+    color: var(--text);
+    cursor: pointer;
+}
+.display input[type="text"]{
+    margin-top: 52px;
+    font-size: 30px;
+    color: var(--text);
+    background-color:var(--display);
+    margin-bottom: 5px;
+    width: 100%;
+    height: 40px;
+    text-align: right;
+    padding: 0 10px;
+    /* cursor: text; */
+
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--input);
+    padding: 25px;
+   
+}
+.buttons input[type="button"]{
+    background: transparent;
+    width: 48px;
+    height: 50px;
+    color: var(--text);
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+#white{
+    background-color: aliceblue;
+    color: black;
+}
+#equal{
+    background-color: rgb(254, 56, 25);
+    color: aliceblue;
+}
+.buttons input[type="button"]:hover{
+    background-color: var(--hover);
+ }
