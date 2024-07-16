@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+ <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="heading">
+          <p>Calculator</p>
+          <div class="thm-btn">
+            <i class="fa-solid fa-moon" id="theme"></i>
+          </div>
+        </div>
+        <div class="display">
+          <!-- <input type="text" placeholder="0" id="input" disabled /> -->
+          <input type="text" placeholder="0" id="input" disabled />
+        </div>
+        <div class="buttons">
+        
+          <input type="button" value="AC" id="clear" />          <!-- Full Erase -->
+          <input type="button" value="DEL" id="erase" />  <!-- Erase Single Value -->
+          <input type="button" value="%" class="input-button" />
+          <input type="button" value="/" class="input-button" id="white"/>
+
+          <input type="button" value="1" class="input-button" />
+          <input type="button" value="2" class="input-button" />
+          <input type="button" value="3" class="input-button" />
+          <input type="button" value="*" class="input-button" id="white"/>
+
+          <input type="button" value="4" class="input-button" />
+          <input type="button" value="5" class="input-button" />
+          <input type="button" value="6" class="input-button" />
+          <input type="button" value="-" class="input-button" id="white"/>
+
+          <input type="button" value="7" class="input-button" />
+          <input type="button" value="8" class="input-button" />
+          <input type="button" value="9" class="input-button" />
+          <input type="button" value="+" class="input-button" id="white"/>
+
+          <input type="button" value="00 " class="input-button" />
+          <input type="button" value="0" class="input-button" />
+          <input type="button" value="." class="input-button" />
+          <input type="button" value="=" id="equal" />
+        </div>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="js.js"></script>
+  </body>
+</html>
